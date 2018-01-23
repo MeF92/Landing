@@ -1,0 +1,25 @@
+{
+  "name": "landingproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeF92/Landing.git"
+  },
+  "author": "Denis Bozhko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeF92/Landing/issues"
+  },
+  "homepage": "https://github.com/MeF92/Landing#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5"
+  }
+}
