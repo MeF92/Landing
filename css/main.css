@@ -1,4 +1,29 @@
 @import "reset.css";
-h1 {
-  color: red;
+.header {
+  max-width: 1170px;
+  min-width: 560px;
+  margin: 0 auto;
+  padding: 22px 0 23px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-menu {
+  padding-top: 5px;
+}
+.header .header-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header .header-menu ul li a {
+  color: #868686;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.header .header-menu ul a:hover {
+  background: #ffbb42;
 }
