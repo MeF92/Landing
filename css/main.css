@@ -1,4 +1,7 @@
 @import "reset.css";
+.hidden {
+  opacity: 0;
+}
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -69,13 +72,13 @@ body {
   transition: all 0.3s;
 }
 .form-bg .business-form input[type="text"] {
-  background: url('../img/person.png') no-repeat 15px 16px white;
+  background: url('../img/person.png') no-repeat 15px 20px white;
 }
 .form-bg .business-form input[type="tel"] {
-  background: url('../img/phone.png') no-repeat 15px 17px white;
+  background: url('../img/phone.png') no-repeat 15px 20px white;
 }
 .form-bg .business-form input[type="email"] {
-  background: url('../img/mail.png') no-repeat 15px 18px white;
+  background: url('../img/mail.png') no-repeat 15px 20px white;
 }
 .form-bg .business-form input:focus {
   border-color: #ffbb42;
@@ -88,9 +91,44 @@ body {
   color: white;
   text-transform: uppercase;
 }
+.macbook-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  left: 22%;
+  top: -28%;
+}
+.macbook-wrapper .macbook {
+  width: 647px;
+  height: 345px;
+  background: url('../img/macbook.png') no-repeat;
+}
+.macbook-wrapper .macbook img {
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+.macbook-wrapper .macbook img:nth-child(2) {
+  margin-top: -298px;
+}
+.macbook-wrapper .macbook img:last-child {
+  margin-top: -345px;
+}
+.macbook-wrapper .macbook-toggles .toggle {
+  width: 15px;
+  margin-top: 20px;
+  height: 15px;
+  border: 2px solid #e4e5e5;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.macbook-wrapper .macbook-toggles .toggle:first-child {
+  border-color: #59bfe6;
+}
 main .services-wrapper {
   padding: 202px 0 77px 81px;
   text-align: center;
+  position: relative;
 }
 main .services-wrapper h2 {
   text-transform: uppercase;
@@ -98,9 +136,11 @@ main .services-wrapper h2 {
   font-weight: 700;
   margin-bottom: 0;
   color: #394b50;
+  transform: translateX(-30px);
 }
 main .services-wrapper h2 + p {
   font-size: 14px;
+  transform: translateX(-30px);
 }
 main .services-wrapper .services-container {
   justify-content: space-between;
@@ -156,4 +196,9 @@ main .services-wrapper .services-container .service h3 {
 }
 main .services-wrapper .services-container .service p {
   font-size: 13px;
+}
+@media screen and (max-width: 767px) {
+  .macbook-wrapper {
+    display: none;
+  }
 }

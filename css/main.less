@@ -4,6 +4,12 @@
 @light-blue: #709dca;
 @light-gray: #868686;
 @sea: #394b50;
+@lighter-blue: #59bfe6;
+@toggles: #e4e5e5;
+
+.hidden {
+  opacity: 0;
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -88,15 +94,15 @@ body {
     }
 
     input[type="text"] {
-      background: url('../img/person.png') no-repeat 15px 16px white;
+      background: url('../img/person.png') no-repeat 15px 20px white;
     }
 
     input[type="tel"] {
-      background: url('../img/phone.png') no-repeat 15px 17px white;
+      background: url('../img/phone.png') no-repeat 15px 20px white;
     }
 
     input[type="email"] {
-      background: url('../img/mail.png') no-repeat 15px 18px white;
+      background: url('../img/mail.png') no-repeat 15px 20px white;
     }
 
     input:focus {
@@ -114,12 +120,60 @@ body {
   }
 }
 
+// macbook
+
+.macbook-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  left: 22%;
+  top: -28%;
+
+  .macbook {
+    width: 647px;
+    height: 345px;
+    background: url('../img/macbook.png') no-repeat;
+
+    img {
+      margin-top: 15px;
+      transition: all 0.5s;
+    }
+
+    img:nth-child(2) {
+      margin-top: -298px;
+    }
+
+    img:last-child {
+      margin-top: -345px;
+    }
+  }
+
+  .macbook-toggles {
+
+    .toggle {
+      width: 15px;
+      margin-top: 20px;
+      height: 15px;
+      border: 2px solid @toggles;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .toggle:first-child {
+      border-color: @lighter-blue;
+    }
+  }
+}
+
 // services
 
 main {
   .services-wrapper {
     padding: 202px 0 77px 81px;
     text-align: center;
+    position: relative;
+
 
     h2 {
       text-transform: uppercase;
@@ -127,10 +181,12 @@ main {
       font-weight: 700;
       margin-bottom: 0;
       color: @sea;
+      transform: translateX(-30px);
     }
 
     h2 + p {
       font-size: 14px;
+      transform: translateX(-30px);
     }
 
     .services-container {
@@ -198,6 +254,12 @@ main {
         }
       }
     }
+  }
+}
+
+@media  screen and (max-width : 767px) {
+  .macbook-wrapper {
+    display: none;
   }
 }
 
