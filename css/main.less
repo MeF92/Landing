@@ -6,6 +6,12 @@
 @sea: #394b50;
 @lighter-blue: #59bfe6;
 @toggles: #e4e5e5;
+@btn-border: #e7ad48;
+@plan-bg: #e7edf3;
+@plan-lists-border: #e2e9f0;
+@premium-plan-text: #c2e1ff;
+@premium-plan-border: #8eb8e2;
+@plans-border: #ccd5df;
 
 .hidden {
   opacity: 0;
@@ -14,6 +20,12 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+  }
 }
 
 // header
@@ -44,6 +56,7 @@ body {
         padding: 12px 20px;
         text-decoration: none;
         border-radius: 2px;
+        transition: all 0.3s;
       }
       a:hover {
         background: @orange;
@@ -176,9 +189,6 @@ main {
 
 
     h2 {
-      text-transform: uppercase;
-      font-size: 25px;
-      font-weight: 700;
       margin-bottom: 0;
       color: @sea;
       transform: translateX(-30px);
@@ -263,3 +273,172 @@ main {
   }
 }
 
+// about us
+
+.about-us {
+
+  .about-us-bg {
+    background: url('../img/chair.jpg') no-repeat;
+    width: 951px;
+    height: 714px;
+  }
+
+  .about-us-info {
+    background: @orange;
+    height: 714px;
+    padding: 164px 0 0 80px;
+
+    .inner-info {
+      max-width: 505px;
+      color: white;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 13px;
+        margin-bottom: 36px;
+      }
+
+      a {
+        display: block;
+        max-width: 152px;
+        padding: 12px 31px;
+        border: 1px solid @btn-border;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      a:hover {
+        background: @btn-border;
+      }
+    }
+  }
+}
+
+// plans
+
+.plan-bg {
+  background: @plan-bg;
+}
+
+.plan-container {
+  text-align: center;
+  padding-top: 135px;
+  padding-bottom: 160px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 13px;
+    margin-bottom: 55px;
+  }
+
+  .plans {
+    align-items: center;
+
+    .plan {
+      height: 430px;
+      padding-top: 55px;
+      background: white;
+      color: @light-gray;
+
+      h3 {
+        text-transform: uppercase;
+      }
+
+      p {
+        text-transform: uppercase;
+        margin-top: -10px;
+        margin-bottom: 35px;
+      }
+
+      ul {
+        margin: 0 10px 15px 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        li {
+          border-top: 1px solid @plan-lists-border;
+
+          a {
+            display: block;
+            color: @light-gray;
+            padding: 10px 0;
+            text-decoration: none;
+            transition: all 0.3s;
+          }
+
+          a:hover {
+            background: @plan-lists-border;
+          }
+        }
+      }
+
+        > a {
+          background: @orange;
+          display: block;
+          max-width: 140px;
+          margin: 0 auto;
+          padding: 8px 0;
+          border-radius: 2px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          transition: all 0.3s;
+        }
+
+        > a:hover {
+          background: @btn-border;
+        }
+
+      .price {
+        position: relative;
+        font-size: 45px;
+        color: @orange;
+        font-weight: 700;
+        padding-left: 25px;
+      }
+
+      .price:before {
+        content: "$";
+        position: absolute;
+        left: 8px;
+        font-size: 30px;
+      }
+    }
+
+    .plan:nth-child(2) {
+      height: 500px;
+      padding-top: 90px;
+      background: @light-blue;
+      color: white;
+
+      .price {
+        color: white;
+      }
+
+      ul li {
+        border-top-color: @premium-plan-border;
+
+        a {
+          color: @premium-plan-text;
+        }
+
+        a:hover {
+          background: @premium-plan-border;
+        }
+      }
+    }
+
+    .plan:not(:nth-child(2)) {
+      border-top: 1px solid @plans-border;
+      border-bottom: 1px solid @plans-border;
+    }
+  }
+}
