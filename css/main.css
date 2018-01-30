@@ -6,6 +6,11 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
 }
+body h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+}
 .header,
 .business-form {
   max-width: 1170px;
@@ -32,6 +37,7 @@ body {
   padding: 12px 20px;
   text-decoration: none;
   border-radius: 2px;
+  transition: all 0.3s;
 }
 .header .header-menu ul a:hover {
   background: #ffbb42;
@@ -131,9 +137,6 @@ main .services-wrapper {
   position: relative;
 }
 main .services-wrapper h2 {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 700;
   margin-bottom: 0;
   color: #394b50;
   transform: translateX(-30px);
@@ -201,4 +204,138 @@ main .services-wrapper .services-container .service p {
   .macbook-wrapper {
     display: none;
   }
+}
+.about-us .about-us-bg {
+  background: url('../img/chair.jpg') no-repeat;
+  width: 951px;
+  height: 714px;
+}
+.about-us .about-us-info {
+  background: #ffbb42;
+  height: 714px;
+  padding: 164px 0 0 80px;
+}
+.about-us .about-us-info .inner-info {
+  max-width: 505px;
+  color: white;
+}
+.about-us .about-us-info .inner-info h2 {
+  margin-bottom: 20px;
+}
+.about-us .about-us-info .inner-info p {
+  font-size: 13px;
+  margin-bottom: 36px;
+}
+.about-us .about-us-info .inner-info a {
+  display: block;
+  max-width: 152px;
+  padding: 12px 31px;
+  border: 1px solid #e7ad48;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.about-us .about-us-info .inner-info a:hover {
+  background: #e7ad48;
+}
+.plan-bg {
+  background: #e7edf3;
+}
+.plan-container {
+  text-align: center;
+  padding-top: 135px;
+  padding-bottom: 160px;
+}
+.plan-container h2 {
+  margin-bottom: 0;
+}
+.plan-container p {
+  font-size: 13px;
+  margin-bottom: 55px;
+}
+.plan-container .plans {
+  align-items: center;
+}
+.plan-container .plans .plan {
+  height: 430px;
+  padding-top: 55px;
+  background: white;
+  color: #868686;
+}
+.plan-container .plans .plan h3 {
+  text-transform: uppercase;
+}
+.plan-container .plans .plan p {
+  text-transform: uppercase;
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
+.plan-container .plans .plan ul {
+  margin: 0 10px 15px 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.plan-container .plans .plan ul li {
+  border-top: 1px solid #e2e9f0;
+}
+.plan-container .plans .plan ul li a {
+  display: block;
+  color: #868686;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.plan-container .plans .plan ul li a:hover {
+  background: #e2e9f0;
+}
+.plan-container .plans .plan > a {
+  background: #ffbb42;
+  display: block;
+  max-width: 140px;
+  margin: 0 auto;
+  padding: 8px 0;
+  border-radius: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s;
+}
+.plan-container .plans .plan > a:hover {
+  background: #e7ad48;
+}
+.plan-container .plans .plan .price {
+  position: relative;
+  font-size: 45px;
+  color: #ffbb42;
+  font-weight: 700;
+  padding-left: 25px;
+}
+.plan-container .plans .plan .price:before {
+  content: "$";
+  position: absolute;
+  left: 8px;
+  font-size: 30px;
+}
+.plan-container .plans .plan:nth-child(2) {
+  height: 500px;
+  padding-top: 90px;
+  background: #709dca;
+  color: white;
+}
+.plan-container .plans .plan:nth-child(2) .price {
+  color: white;
+}
+.plan-container .plans .plan:nth-child(2) ul li {
+  border-top-color: #8eb8e2;
+}
+.plan-container .plans .plan:nth-child(2) ul li a {
+  color: #c2e1ff;
+}
+.plan-container .plans .plan:nth-child(2) ul li a:hover {
+  background: #8eb8e2;
+}
+.plan-container .plans .plan:not(:nth-child(2)) {
+  border-top: 1px solid #ccd5df;
+  border-bottom: 1px solid #ccd5df;
 }
