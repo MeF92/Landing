@@ -339,3 +339,73 @@ main .services-wrapper .services-container .service p {
   border-top: 1px solid #ccd5df;
   border-bottom: 1px solid #ccd5df;
 }
+.steps-container {
+  text-align: center;
+  padding: 155px 0 149px 0;
+}
+.steps-container .steps-inner {
+  justify-content: space-between;
+}
+.steps-container h2 {
+  margin-bottom: 0;
+}
+.steps-container > p {
+  font-size: 13px;
+  margin-bottom: 107px;
+}
+.steps-container > a {
+  background: #ffbb42;
+  display: block;
+  font-size: 14px;
+  max-width: 140px;
+  margin: 91px auto 0 auto;
+  padding: 8px 0;
+  border-radius: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s;
+}
+.steps-container > a:hover {
+  background: #e7ad48;
+  text-decoration: none;
+  color: white;
+}
+.steps-container .step {
+  position: relative;
+  flex-basis: 240px;
+}
+.steps-container .step h3 {
+  margin-top: 102px;
+  margin-bottom: 21px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+.steps-container .step p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.steps-container .step-1:after,
+.steps-container .step-3:after,
+.steps-container .step-2:after {
+  content: '';
+  position: absolute;
+  background: url('../img/arrow-up.jpg') no-repeat;
+  width: 131px;
+  height: 35px;
+  top: -35px;
+  left: 210px;
+}
+.steps-container .step-2:after {
+  background: url('../img/arrow-down.jpg') no-repeat;
+  top: 75px;
+  left: 200px;
+}
+@media (max-width: 992px) {
+  .step-1:after,
+  .step-3:after,
+  .step-2:after {
+    display: none;
+  }
+}
