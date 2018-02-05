@@ -409,3 +409,62 @@ main .services-wrapper .services-container .service p {
     display: none;
   }
 }
+.feedback-bg {
+  background-color: #ffbb42;
+}
+.feedback-container {
+  text-align: center;
+  padding: 141px 0 141px 0;
+}
+.feedback-container .feedback-wrapper {
+  justify-content: space-between;
+}
+.feedback-container h2,
+.feedback-container > p {
+  color: white;
+}
+.feedback-container h2 {
+  margin-bottom: 0;
+}
+.feedback-container > p {
+  font-size: 13px;
+  margin-bottom: 58px;
+}
+.feedback-container .client {
+  background: white;
+  margin-bottom: 20px;
+  flex-basis: 555px;
+  padding: 43px 41px 31px 30px;
+}
+.feedback-container .client .feedback-text {
+  font-size: 13px;
+}
+.feedback-container .client .feedback-text .quotes {
+  font-weight: 700;
+}
+.feedback-container .client .feedback-author {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.feedback-container .client .feedback-author .author-name {
+  color: #f7803a;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.feedback-container .client .feedback-author .author-name:hover {
+  color: black;
+}
+.feedback-container .client .feedback-author .author-position {
+  color: #99a9ae;
+}
+.feedback-container .client .client-img-container {
+  float: left;
+}
+.feedback-container .client .client-img-container img {
+  margin-right: 31px;
+}
+.feedback-container .client .client-info-container {
+  text-align: left;
+  overflow: hidden;
+  padding-top: 8px;
+}

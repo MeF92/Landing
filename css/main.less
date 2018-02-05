@@ -443,7 +443,7 @@ main {
   }
 }
 
-// Steps
+// steps
 
 .steps-container {
   text-align: center;
@@ -525,3 +525,80 @@ main {
     }
   }
 }
+
+// feedback
+
+.feedback-bg {
+  background-color: @orange;
+}
+
+.feedback-container {
+  text-align: center;
+  padding: 141px 0 141px 0;
+
+  .feedback-wrapper {
+    justify-content: space-between;
+  }
+
+  h2, > p {
+    color: white;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  > p {
+    font-size: 13px;
+    margin-bottom: 58px;
+  }
+
+  .client {
+    background: white;
+    margin-bottom: 20px;
+    flex-basis: 555px;
+    padding: 43px 41px 31px 30px;
+
+    .feedback-text {
+      font-size: 13px;
+
+      .quotes {
+        font-weight: 700;
+      }
+    }
+
+    .feedback-author {
+      text-transform: uppercase;
+      font-size: 14px;
+
+      .author-name {
+        color: #f7803a;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .author-name:hover {
+        color: black;
+      }
+
+      .author-position {
+        color: #99a9ae;
+      }
+    }
+
+    .client-img-container {
+      float: left;
+
+      img {
+        margin-right: 31px;
+      }
+    }
+
+    .client-info-container {
+      text-align: left;
+      overflow: hidden;
+      padding-top: 8px;
+    }
+  }
+}
+
