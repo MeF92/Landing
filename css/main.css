@@ -47,6 +47,10 @@ body .fields-wrapper button {
   flex-basis: 224px;
   color: white;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+body .fields-wrapper button:hover {
+  background: #e7ad48;
 }
 .header,
 .business-form {
@@ -500,10 +504,6 @@ main .services-wrapper .services-container .service p {
 }
 .footer-container .fields-wrapper button {
   flex-basis: 218px;
-  transition: all 0.3s;
-}
-.footer-container .fields-wrapper button:hover {
-  background: #e7ad48;
 }
 .footer-container .map {
   background: url('../img/map.jpg') no-repeat center;
