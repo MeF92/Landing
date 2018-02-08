@@ -81,7 +81,6 @@ body {
 
 .header, .business-form {
   max-width: 1170px;
-  min-width: 560px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -269,12 +268,6 @@ main {
         }
       }
     }
-  }
-}
-
-@media  screen and (max-width : 767px) {
-  .macbook-wrapper {
-    display: none;
   }
 }
 
@@ -522,15 +515,6 @@ main {
   }
 }
 
-@media (max-width: 992px) {
-  .step {
-
-    &-1:after, &-3:after, &-2:after {
-      display: none;
-    }
-  }
-}
-
 // feedback
 
 .feedback-bg {
@@ -758,6 +742,74 @@ main {
 
   p {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .step {
+
+    &-1:after, &-3:after, &-2:after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width : 768px) {
+  .macbook-wrapper {
+    display: none;
+  }
+
+  .about-us {
+
+    .about-us-bg {
+      display: none;
+    }
+
+    .about-us-info {
+      padding-left: 15px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .feedback-container {
+
+    .client {
+
+      .client-img-container {
+        float: none;
+      }
+    }
+  }
+
+  .footer-container {
+
+  .map {
+    margin-bottom: 0;
+    .company-address-container {
+      padding-top: 50px;
+    }
+  }
+}
+
+  .steps-container {
+
+    >a {
+      margin-top: 32px;
+    }
+
+    .step {
+      margin: 0 auto;
+      h3 {
+        margin-top: 30px;
+      }
+
+      p {
+        margin-bottom: 50px;
+      }
+    }
   }
 }
 

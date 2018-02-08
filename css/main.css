@@ -55,7 +55,6 @@ body .fields-wrapper button:hover {
 .header,
 .business-form {
   max-width: 1170px;
-  min-width: 560px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -207,11 +206,6 @@ main .services-wrapper .services-container .service h3 {
 }
 main .services-wrapper .services-container .service p {
   font-size: 13px;
-}
-@media screen and (max-width: 767px) {
-  .macbook-wrapper {
-    display: none;
-  }
 }
 .about-us .about-us-bg {
   background: url('../img/chair.jpg') no-repeat;
@@ -410,13 +404,6 @@ main .services-wrapper .services-container .service p {
   top: 75px;
   left: 200px;
 }
-@media (max-width: 992px) {
-  .step-1:after,
-  .step-3:after,
-  .step-2:after {
-    display: none;
-  }
-}
 .feedback-bg {
   background-color: #ffbb42;
 }
@@ -598,4 +585,46 @@ main .services-wrapper .services-container .service p {
 }
 .footer-copyright p {
   margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .step-1:after,
+  .step-3:after,
+  .step-2:after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .macbook-wrapper {
+    display: none;
+  }
+  .about-us .about-us-bg {
+    display: none;
+  }
+  .about-us .about-us-info {
+    padding-left: 15px;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .feedback-container .client .client-img-container {
+    float: none;
+  }
+  .footer-container .map {
+    margin-bottom: 0;
+  }
+  .footer-container .map .company-address-container {
+    padding-top: 50px;
+  }
+  .steps-container > a {
+    margin-top: 32px;
+  }
+  .steps-container .step {
+    margin: 0 auto;
+  }
+  .steps-container .step h3 {
+    margin-top: 30px;
+  }
+  .steps-container .step p {
+    margin-bottom: 50px;
+  }
 }
