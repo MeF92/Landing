@@ -1,11 +1,11 @@
 'use strict';
 
-var toggles = document.querySelectorAll('.toggle');
-var img1 = document.querySelector('.macbook img:first-child');
-var img2 = document.querySelector('.macbook img:nth-child(2)');
-var img3 = document.querySelector('.macbook img:last-child');
+let toggles = document.querySelectorAll('.toggle');
+let img1 = document.querySelector('.macbook img:first-child');
+let img2 = document.querySelector('.macbook img:nth-child(2)');
+let img3 = document.querySelector('.macbook img:last-child');
 
-var onToggleClick = function(evt) {
+let onToggleClick = function(evt) {
     evt.preventDefault();
     evt.target.style.borderColor = '#59bfe6';
 };
