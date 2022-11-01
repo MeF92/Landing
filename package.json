@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/MeF92/Landing#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.23.5",
