@@ -20,7 +20,7 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.5",
+    "browser-sync": "^2.29.1",
     "gulp-clean-css": "^3.9.2",
     "gulp-group-css-media-queries": "^1.2.0",
     "gulp-less": "^3.4.0",
